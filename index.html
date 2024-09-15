@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/66dd45eaee.js" crossorigin="anonymous"></script>
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="Home" id="homeButton" href="#">Home</a>
+        <a class="Projects" id="projectsButton" href="#">Projects</a>
+        <a class="Contact" id="contactButton" href="#">Contact</a>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <div class="about-me">
+                <div class="name">
+                    <h1>Colby Stuart</h1>
+                </div>
+                <div class="description">
+                    <div class="about">
+                        <h2>Hello! I am a currently a Software Engineering student at Mississippi State Unviersity with a passion for software development and learning as much as I can about it.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="img.JPG" alt = "Colby" class="profile-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-container">
+        <h1>Projects</h1>
+        <div class="projects">
+            <div class="dawghouse"></div>
+            <a href="https://dawghousedev.pythonanywhere.com">
+                <i class="fa-solid fa-house"></i>
+                  DawgHouse
+            </a>
+            <a href="https://github.com/colbystuart/Therabot">
+                <i class="fa-solid fa-dog"></i>
+                  Therabot
+            </a>
+            <a href="https://github.com/colbystuart/StudentDB">
+                <i class="fa-solid fa-database"></i>
+                  Student Database
+            </a>
+            <a href="https://colbystuart.pythonanywhere.com/">
+                <i class="fa-solid fa-database"></i>
+                  BMI Calculator
+            </a>
+            <a href="https://github.com/colbystuart/methodsproject">
+                <i class="fa-solid fa-cart-shopping"></i>
+                  E-Commerce
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i>  <a href="mailto:stuart_colby@yahoo.com">stuart_colby@yahoo.com</a></a></p>
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:6623869553">662-386-9553</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+$(document).ready(function() {
+    $("#homeButton").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".container").offset().top
+        }, 'slow');
+    });
+
+    $("#projectsButton").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".projects-container").offset().top
+        }, 'slow');
+    });
+
+    $("#contactButton").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".contact-container").offset().top
+        }, 'slow');
+    });
+});
+
+</script>

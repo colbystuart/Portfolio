@@ -1,0 +1,189 @@
+body {
+    background-color: rgb(235, 235, 235);
+    font-family: Gill Sans, sans-serif;
+    color: white;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    display: block; /* Change display to block */
+}
+
+/* Your existing CSS continues here */
+
+.img-container {
+    border-radius: 50px; /* Apply the border radius to the container */
+    padding-left: 200px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-width: 5px;
+    border-radius: 50px;
+    margin-right: 5px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+    max-width: 400px; /* This will be the default max-width for large screens */
+}
+@media screen and (max-width: 768px) {
+    img {
+        max-width: 250px;
+    }
+}
+
+/* When the screen size is 576px or less, set the max-width to 300px */
+@media screen and (max-width: 576px) {
+    img {
+        max-width: 300px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(93, 23, 37);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.projects-container {
+    background-color: rgb(93, 23, 37);
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+.contact-container {
+    background-color: rgb(93, 23, 37);
+    padding: 40px;
+    flex-direction: row;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: center;
+}
+
+.contact-info p {
+    margin-right: 100px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contact-info p:hover {
+    box-shadow: rgba(50, 50, 93, 0.45) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.4) 0px 18px 36px -18px inset;
+}
+
+.contact-info a {
+    color: black; /* Set anchor color to white */
+}
+
+.contact-info a:hover {
+    color: black; /* Set hover color to white */
+}
+
+.contact-info p a {
+    color: black; /* Set anchor color to white within paragraphs */
+}
+
+.contact-info p a:hover {
+    color: black; /* Set hover color to white within paragraphs */
+}
+
+
+a:visited {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.projects a {
+    margin-right: 100px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.projects a:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.header {
+    display: flex;
+}
+
+.name {
+    font-size:2rem;
+}
+
+.about-me {
+    padding-left: 30px;
+}
+
+.about {
+    font-size: 14px;
+}
+
+.description {
+    padding-top: 100px;
+    max-width: 800px;
+}
+
+
+.footnote {
+
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #4b4b4b;
+    overflow: hidden;
+    width: 100vw;
+    border-bottom: 2px solid black;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    opacity: 99%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: white; /* Set text color to white */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: transparent; /* Remove background */
+    border: none; /* Remove border */
+    margin: 0; /* Remove any default margin */
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: transparent; /* Remove background color on hover */
+    color: black;
+    opacity: 50%;
+}
+
